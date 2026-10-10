@@ -125,29 +125,14 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  color: var(--text);
+  flex: 0 0 auto;
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.77rem;
 }
 
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--green), var(--cyan));
-  color: #031015;
-  font-weight: 900;
-  box-shadow: 0 0 18px rgba(92, 225, 255, 0.35);
-}
-
-.brand strong {
-  color: var(--cyan);
+.brand-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
 }
 
 .nav {
@@ -798,10 +783,21 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 24px;
   padding-top: 18px;
   color: var(--text-soft);
   font-size: 0.8rem;
+}
+
+.footer-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 112px;
+}
+
+.footer-brand img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 960px) {

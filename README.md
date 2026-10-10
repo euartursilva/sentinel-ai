@@ -9,6 +9,8 @@ O protótipo ilustra como inventário, sinais de detecção, incidentes e arquit
 apresentados em um painel. As métricas, alertas e exemplos são fictícios e aparecem apenas para
 demonstrar a interface.
 
+A identidade visual SENTINEL enviada para o projeto aparece no cabeçalho e no rodapé do site.
+
 ## Principais capacidades
 
 - Navegação por visões de princípios, arquitetura, detecção e cobertura.
