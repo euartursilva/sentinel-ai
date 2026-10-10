@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Protótipo visual do SENTINEL AI: uma proposta conceitual de painel para operações de segurança."
+    />
+    <meta name="theme-color" content="#07141d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="SENTINEL AI | Protótipo conceitual" />
+    <meta
+      property="og:description"
+      content="Demonstração estática com dados ilustrativos; não monitora ativos nem executa respostas de segurança."
+    />
+    <meta property="og:url" content="https://euartursilva.github.io/sentinel-ai/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://euartursilva.github.io/sentinel-ai/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SENTINEL AI | Protótipo conceitual</title>
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="#overview" class="brand" aria-label="Voltar ao topo">
+          <span class="brand-mark">S</span>
+          <span class="brand-text">SENTINEL <strong>AI</strong></span>
+        </a>
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#overview">Visão geral</a>
+          <a href="#principios">Princípios</a>
+          <a href="#arquitetura">Arquitetura</a>
+          <a href="#detecao">Detecção</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a href="#overview" class="button button-ghost">Explorar demonstração</a>
+      </div>
+    </header>
+    <aside class="demo-banner" role="note">
+      <div class="container">
+        <strong>DEMONSTRAÇÃO CONCEITUAL</strong>
+        <span>Dados, métricas e alertas fictícios. Esta página não monitora dispositivos nem executa ações de segurança.</span>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="dot"></span> Protótipo visual · demonstração</p>
+            <h1>
+              Cibersegurança operacional,
+              <span>com IA que entende o risco.</span>
+            </h1>
+            <p class="lede">
+              O SENTINEL AI explora o conceito de um painel para centralizar sinais de segurança. Esta
+              página é apenas uma demonstração visual: não possui backend, não monitora dispositivos e não
+              executa detecções ou respostas reais.
+            </p>
+            <div class="cta-row">
+              <a href="#contato" class="button button-primary">Sobre esta demonstração</a>
+              <a href="#arquitetura" class="button button-secondary">Ver arquitetura</a>
+            </div>
+            <ul class="hero-points" aria-label="Principais diferenciais">
+              <li>Conceito: correlação de sinais e regras explicáveis.</li>
+              <li>Conceito: ações defensivas com aprovação humana.</li>
+              <li>Interface demonstrativa, sem integração com ativos reais.</li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="Painel conceitual com dados simulados">
+            <div class="panel-header">
+              <span class="panel-badge">DEMO</span>
+              <span class="panel-title">Threat command</span>
+            </div>
+            <div class="dashboard-box">
+              <div class="ring-wrap">
+                <div class="ring">
+                  <div class="ring-inner">
+                    <strong data-target="99.2">0</strong>
+                    <span>%</span>
+                  </div>
+                </div>
+                <small>Disponibilidade</small>
+              </div>
+              <div class="signal-stack">
+                <div class="signal-row">
+                  <span>Agentes ativos</span>
+                  <strong>1.438</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Eventos/min</span>
+                  <strong>48.7k</strong>
+                </div>
+                <div class="signal-row">
+                  <span>Risco crítico</span>
+                  <strong class="alert">03</strong>
+                </div>
+              </div>
+            </div>
+            <div class="event-feed">
+              <div class="feed-item ok">
+                <span class="feed-time">10:42</span>
+                <span class="feed-label">Windows · Integridade</span>
+                <span class="feed-status">Normal</span>
+              </div>
+              <div class="feed-item warn">
+                <span class="feed-time">10:47</span>
+                <span class="feed-label">Firewall · DNS anômalo</span>
+                <span class="feed-status">Investigação</span>
+              </div>
+              <div class="feed-item alert">
+                <span class="feed-time">10:53</span>
+                <span class="feed-label">Servidor · Ransomware</span>
+                <span class="feed-status">Ação bloqueada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mini-stats">
+        <div class="container stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">Dispositivos monitorados</span>
+            <strong data-target="32000">0</strong>
+            <small>Ativos em inventário e rede</small>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Tempo médio de resposta</span>
+            <strong data-target="7">0</strong>
+            <small>Minutos até análise inicial</small>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Taxa de falsos positivos</span>
+            <strong data-target="2.1">0</strong>
+            <small>Reduzida por correlação e contexto</small>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">SLA de disponibilidade</span>
+            <strong data-target="99.9">0</strong>
+            <small>Resiliência em falhas de rede</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles" id="principios">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow"><span class="dot"></span> Fundamentos obrigatórios</p>
+            <h2>Uma arquitetura desenhada para segurança, escalabilidade e confiança.</h2>
+          </div>
+
+          <div class="principle-grid">
+            <article class="info-card">
+              <span>01</span>
+              <h3>Segurança desde a arquitetura</h3>
+              <p>Criptografia em trânsito e em repouso, segmentação rigorosa e isolamento entre clientes.</p>
+            </article>
+            <article class="info-card">
+              <span>02</span>
+              <h3>Privilégio mínimo</h3>
+              <p>Agentes, usuários e serviços operam com acesso estritamente necessário para cada função.</p>
+            </article>
+            <article class="info-card">
+              <span>03</span>
+              <h3>Auditabilidade completa</h3>
+              <p>Registro de ações relevantes para investigação, revisão e conformidade operacional.</p>
+            </article>
+            <article class="info-card">
+              <span>04</span>
+              <h3>Respostas reversíveis</h3>
+              <p>Contenção automatizada e reverter ações sempre que a risco de ação for controlado.</p>
+            </article>
+            <article class="info-card">
+              <span>05</span>
+              <h3>Privacidade e minimização</h3>
+              <p>Coleta por necessidade, retenção definida e regras explícitas de uso dos dados.</p>
+            </article>
+            <article class="info-card">
+              <span>06</span>
+              <h3>Explicabilidade</h3>
+              <p>Cada alerta conecta evidências, regras, modelos e impacto potencial para facilitar a decisão.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="architecture" id="arquitetura">
+        <div class="container">
+          <div class="section-head narrow">
+            <p class="eyebrow"><span class="dot"></span> Arquitetura modular</p>
+            <h2>Um sistema preparado para crescer com o ambiente e a complexidade da operação.</h2>
+          </div>
+
+          <div class="architecture-grid">
+            <div class="module module-lg">
+              <div class="module-header">
+                <span>Frontend Web</span>
+                <strong>Operação e governança</strong>
+              </div>
+              <ul>
+                <li>Painel administrativo</li>
+                <li>Central de incidentes</li>
+                <li>Mapa lógico da rede</li>
+                <li>Relatórios e políticas</li>
+                <li>Gestão de clientes e assinaturas</li>
+              </ul>
+            </div>
+            <div class="module">
+              <div class="module-header">
+                <span>Backend</span>
+                <strong>APIs e serviços</strong>
+              </div>
+              <ul>
+                <li>Inventário</li>
+                <li>Ingestão de eventos</li>
+                <li>Risco e resposta</li>
+                <li>Notificações e auditoria</li>
+              </ul>
+            </div>
+            <div class="module">
+              <div class="module-header">
+                <span>Agentes de proteção</span>
+                <strong>Windows e Linux</strong>
+              </div>
+              <ul>
+                <li>Telemetria segura</li>
+                <li>Verificação de integridade</li>
+                <li>Políticas autenticadas</li>
+                <li>Atualizações assinadas</li>
+              </ul>
+            </div>
+            <div class="module">
+              <div class="module-header">
+                <span>Monitoramento de rede</span>
+                <strong>Descoberta e análise</strong>
+              </div>
+              <ul>
+                <li>Ativos autorizados</li>
+                <li>Análise passiva de tráfego</li>
+                <li>DNS e conexões</li>
+                <li>Segmentação por integração</li>
+              </ul>
+            </div>
+            <div class="module module-lg">
+              <div class="module-header">
+                <span>Plataforma de IA</span>
+                <strong>Correlação e previsibilidade</strong>
+              </div>
+              <ul>
+                <li>Análise comportamental</li>
+                <li>Detecção de anomalias</li>
+                <li>Classificação de incidentes</li>
+                <li>Resumo técnico de alertas e recomendações</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="detection" id="detecao">
+        <div class="container detection-grid">
+          <div>
+            <div class="section-head left">
+              <p class="eyebrow"><span class="dot"></span> Motor de detecção</p>
+              <h2>Um mecanismo híbrido para reduzir ruído e aumentar confiança operacional.</h2>
+            </div>
+            <ul class="detection-list">
+              <li>Regras determinísticas para indicadores conhecidos</li>
+              <li>Análise estatística de comportamento e baselines por dispositivo</li>
+              <li>Correlação temporal de eventos e eventos de infraestrutura</li>
+              <li>Modelos de linguagem para resumo, investigação e recomendações</li>
+              <li>Estimação de risco com evidências, severidade e impacto potencial</li>
+            </ul>
+          </div>
+
+          <div class="intel-card">
+            <div class="intel-header">
+              <span>Objetivos de monitoramento</span>
+              <strong>Detecção relevante</strong>
+            </div>
+            <div class="intel-body">
+              <div class="intel-row"><span>Alterações em processos</span><b>Alta</b></div>
+              <div class="intel-row"><span>Persistência e autoruns</span><b>Alta</b></div>
+              <div class="intel-row"><span>DNS e tráfego anômalo</span><b>Alta</b></div>
+              <div class="intel-row"><span>Tentativas repetidas de autenticação</span><b>Crítico</b></div>
+              <div class="intel-row"><span>Ransomware e execução suspeita</span><b>Crítico</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow"><span class="dot"></span> Stack tecnológica</p>
+            <h2>Uma stack proposta para uma implementação futura — ainda sem serviços conectados.</h2>
+          </div>
+
+          <div class="stack-grid">
+            <article class="stack-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>Next.js</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>Pydantic</li>
+                <li>SQLAlchemy</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <h3>Dados</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>Redis</li>
+                <li>S3-compatible storage</li>
+                <li>OpenSearch</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <h3>Mensageria</h3>
+              <ul>
+                <li>RabbitMQ</li>
+                <li>NATS</li>
+                <li>Kafka</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <h3>Agentes</h3>
+              <ul>
+                <li>Rust para eficiência</li>
+                <li>Windows e Linux</li>
+                <li>Atualização segura</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <h3>Operação</h3>
+              <ul>
+                <li>Docker</li>
+                <li>CI/CD</li>
+                <li>IaC</li>
+                <li>Observabilidade</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="coverage">
+        <div class="container">
+          <div class="section-head narrow">
+            <p class="eyebrow"><span class="dot"></span> Cobertura operacional</p>
+            <h2>Proteção para ativos e infraestruturas que fazem parte do ambiente crítico da operação.</h2>
+          </div>
+
+          <div class="coverage-grid">
+            <div class="coverage-item">Computadores Windows</div>
+            <div class="coverage-item">Servidores e VMs</div>
+            <div class="coverage-item">Redes locais e Wi‑Fi</div>
+            <div class="coverage-item">Roteadores e firewalls</div>
+            <div class="coverage-item">Câmeras IP e DVRs</div>
+            <div class="coverage-item">Dispositivos IoT</div>
+            <div class="coverage-item">Cloud e serviços digitais</div>
+            <div class="coverage-item">Aplicações expostas</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contato">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow"><span class="dot"></span> Sobre o protótipo</p>
+            <h2>Uma proposta de interface — ainda sem serviço operacional.</h2>
+            <p>
+              Os painéis, alertas, números, tecnologias e cenários apresentados são ilustrativos. Não há
+              coleta de telemetria, integração com redes, detecção de ameaças, envio de mensagens ou suporte
+              24/7. Nenhum ativo é acessado por esta demonstração.
+            </p>
+            <div class="contact-list">
+              <div>
+                <span>Estado</span>
+                <strong>Protótipo estático no navegador</strong>
+              </div>
+              <div>
+                <span>Dados</span>
+                <strong>Valores de exemplo, não métricas reais</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form demo-details">
+            <p class="eyebrow">O QUE É INTERATIVO</p>
+            <h3>Navegue pela experiência</h3>
+            <p>Explore os princípios, a arquitetura proposta e os exemplos de detecção pelo menu. Os indicadores animados apenas ilustram como um painel poderia apresentar dados.</p>
+            <a href="#overview" class="button button-secondary">Voltar ao início</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 SENTINEL AI</p>
+        <p>Protótipo visual · sem monitoramento em tempo real</p>
+      </div>
+    </footer>
+
+    <script src="index.js?v=2"></script>
+  </body>
+</html>
